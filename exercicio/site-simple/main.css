@@ -1,0 +1,40 @@
+:root {
+  --roxo: #7211bc;
+  --white: #FFFFFF;
+  --black: #000000;
+}
+
+body {
+  background: var(--bg);
+  color: var(--fontColor);
+  font-family: unispace-heavy;
+}
+
+li {
+    list-style: circle;
+    font-family: unispace-heavy;
+  }
+  
+  .list {
+    list-style: square;
+  }
+
+  .light-theme {
+    --bg: var(--white);
+    --fontColor: var(--black);
+  }
+
+  .dark-theme {
+    --bg: var(--black);
+    --fontColor: var(--roxo);
+  }
+
+  @font-face {
+    font-family: unispace-thin;
+    src: url(../site-simple/font/Uni\ Sans\ Thin.otf);
+  }
+
+  @font-face {
+    font-family: unispace-heavy;
+    src: url(../site-simple/font/Uni\ Sans\ Heavy.otf);
+  }
